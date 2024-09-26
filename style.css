@@ -1,0 +1,101 @@
+body{
+    font-family: sans-serif;
+}
+
+h1 {
+    color: white;
+    background: #6667AB;
+    text-align: center;
+    padding: 10px;
+}
+
+form{
+    padding: 0.5rem;
+}
+
+h2 {
+    /* rem es el tamaño de una "m" en pixeles que tenga el font-size de la pagina, 
+    si no cambiamos el font-size en el html siempre será 16px*/
+    font-size: 1.2rem;
+    margin-bottom: 0rem;
+    margin-left: 0.5rem;
+}
+
+textarea, input, label, button{
+    display: block;
+    width: 100%;
+}
+
+textarea, input{
+    margin-bottom: .5rem;
+}
+
+button{
+    background: #6667AB;
+    color: white;
+    padding: 0.5rem;
+    font-weight: bold;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+div.listItems{
+    border: 2px solid #6667AB;
+    margin: 0.5rem;
+    color: #666666;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+}
+
+div.listItems p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+div.listItems p a{
+    font-size: 0.8rem;
+    color: #6667AB;
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+
+div.listItems p a:hover{
+    text-decoration: underline;
+}
+
+div.listItems p a.eliminar{
+    color: red;
+
+}
+
+div.listItems p span{
+    padding: 2px 4px 2px 4px;
+    color: white;
+    font-size: 0.8rem;
+    border-radius: 3px;
+}
+
+div.listItems p span.toDo{
+    background: red;
+}
+
+div.listItems p span.inProgress{
+    background: #EFAC00;
+}
+
+div.listItems p span.done{
+    background: green;
+}
+
+div.tasks{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:476px) {
+    div.tasks{
+        display: flex;
+        flex-direction: row;
+    }
+}
