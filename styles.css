@@ -1,0 +1,114 @@
+* {
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0 auto;;
+}
+
+h1 {
+    background-color: #6667AB;
+    padding: 0.5rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+}
+
+form {
+    padding: 0.5rem;
+}
+
+textarea, input, label, button {
+    width: 100%;
+    display: block;
+}
+
+textarea, input {
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #6667AB;
+    color: #ffffff;
+    padding: 0.5rem;
+    font-weight: bold;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #44457b;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #6667AB;
+    padding: 0 0.5rem;
+    color: #666666;
+    margin: 0.5rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+div p {
+    margin: 0.5rem 0;
+}
+
+div p a {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #6667ab;
+    text-decoration: none;
+}
+
+div p a:hover {
+    text-decoration: underline;
+}
+
+.links :last-child {
+    color: red;
+}
+
+.task span {
+    padding: 2px 8px;
+    color: #ffffff;
+    font-size: 0.8rem;
+    border-radius: 2px;
+}
+
+.inProgress {
+    background-color: #EFAC00;
+}
+
+.toDo {
+    background-color: #7e7d7a
+}
+
+.done {
+    background-color: #02792e;
+}
+
+div.tasks {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px){
+    div.tasks {
+        flex-direction: row;
+    }
+    
+}

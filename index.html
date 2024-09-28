@@ -1,73 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>APP TODOLIST</title>
-    </head>
-    <img>
-        <h1>TODOLIST</h1>
-        <h2>Nueva tarea</h2>
-        <form  action="">
 
-            <label for="description">Escribe la descripción de la tarea</label><br/>
-            <textarea name="" id="" placeholder="Esto es un textarea" name="description">Hola estoy aquí</textarea><br/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP TODOLIST</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 
+<body>
+    <h1>TODOLIST</h1>
+    <h2>Nueva tarea</h2>
+    <form action="">
+        <label for="description">Escribe la descripción de la tarea</label>
+        <textarea name="" id="" placeholder="Esto es un textarea" name="description">Hola estoy aquí</textarea>
+        <label>Fecha límite</label>
+        <input type="date" name="" id="" />
+        <button>INSERTAR</button>
+    </form>
+    <h2>Tareas</h2>
+    <div class="tasks">
+        <div class="task">
+            <p>Preparar la clase de <strong>Nuclio</strong> Full Stack Developer</p>
+            <p><span class="inProgress">IN PROGRESS</span> Fecha límite: 25JUN</p>
+            <p class="links">
+                <a href="" class="edit">editar</a>
+                <a href="" class="">marcar como finalizada</a>
+                <a href="" class="delete">eliminar</a>
+            </p>
+        </div>
+        <div class="task">
+            <p>Preparar la clase de <strong>Nuclio</strong> Full Stack Developer</p>
+            <p><span class="toDo">IN PROGRESS</span> Fecha límite: 25JUN</p>
+            <p class="links">
+                <a href="" class="edit">editar</a>
+                <a href="" class="">marcar como finalizada</a>
+                <a href="" class="delete">eliminar</a>
+            </p>
+        </div>
+        <div class="task">
+            <p>Preparar la clase de <strong>Nuclio</strong> Full Stack Developer</p>
+            <p><span class="done">IN PROGRESS</span> Fecha límite: 25JUN</p>
+            <p class="links">
+                <a href="" class="edit">editar</a>
+                <a href="" class="">marcar como finalizada</a>
+                <a href="" class="delete">eliminar</a>
+            </p>
+        </div>
+    </div>
+</body>
 
-            <label>Fecha límite</label><br/>
-            <input type="date" name="" id="" /><br/>
-
-            <button>INSERTAR</button>
-        </form>
-        <h2>Tareas</h2>
-
-        <p>Preparar la clase de <strong>Nuclio</strong> Full Stack Developer</p>
-        <p>IN PROGRESS Fecha límite: 25JUN</p>
-
-        <p>
-            <a href="">EDITAR</a>
-            <a href="">MARCAR COMO FINALIZADA</a>
-            <a href="">ELIMINAR</a>
-        </p>
-
-        <table border="1">
-            <tr>
-                <td><img src="https://images.pexels.com/photos/3608263/pexels-photo-3608263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" width="120"></td>
-                <td><img src="https://images.pexels.com/photos/3608263/pexels-photo-3608263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" width="120"></td>
-                <td><img src="https://images.pexels.com/photos/3608263/pexels-photo-3608263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" width="120"></td>
-                <td><img src="https://images.pexels.com/photos/3608263/pexels-photo-3608263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" width="120"></td>
-                <td><img src="https://images.pexels.com/photos/3608263/pexels-photo-3608263.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="" width="120"></td>
-            </tr>
-        </table>
-
-        <h2>Cosas a comprar</h2>
-
-        <ul>
-            <li>Pan</li>
-            <li>Leche</li>
-            <li>Cereales</li>
-        </ul>
-
-        <ol>
-            <li>Granadas</li>
-            <li>Plátanos</li>
-            <li>Granadas</li>
-            <li>Plátanos</li>
-        </ol>
-
-        <dl>
-            <dt>El padrino</dt>
-            <dd>Dirigida por Martin Scorsese</dd>
-            <dt>Una noche en el museo</dt>
-            <dd>Dirigida por Adam Sandler</dd>
-        </dl>
-
-        <dl>
-            <dt>¿Quiénes somos?</dt>
-            <dd>Somos un equipo super chachi</dd>
-            <dt>¿Dónde estamos?</dt>
-            <dd>En el mundo</dd>
-        </dl>    
-
-    </body>
 </html>
