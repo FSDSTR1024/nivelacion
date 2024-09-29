@@ -1,0 +1,121 @@
+body {
+    font-family: sans-serif;
+}
+
+h1 {
+    color: white;
+    background-color: #6865a5;
+    text-align: center;
+    padding: 10px;
+}
+
+h2 {
+font-weight: bold;
+font-size: 1.2rem;
+margin: 0.5rem;
+}
+
+form {
+    margin:0.5rem;
+}
+
+textarea, input, label, button {
+    display: block;
+    width: 100%;
+}
+
+textarea, input {
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #6865a5;
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #494597;
+}
+
+div.listItem p  {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+div.listItem {
+    border: 2px solid #6865a5;
+    padding: 0 0.5rem 0 0.5rem;
+    color: #666666;
+    margin: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+div.listItem p a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: #6865a5;
+    margin-right: 1rem;
+}
+
+div.listItem p a:hover{
+    text-decoration: underline;
+}
+
+div.listItem p a.delete {
+    color: red;
+}
+
+div.listItem span {
+    padding: 2px 8px 2px 8px;
+    color: white;
+    border-radius: 2px;
+    font-size: 0.8rem;
+}
+
+div.listItem span.in-progress{
+    background-color: #EFAC00;
+}
+
+div.listItem span.toDo{
+    background-color: #9b1010;
+}
+
+div.listItem span.done{
+    background-color: #169b1d;
+}
+
+div.tasks{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:476px){
+    div.tasks {
+        flex-direction: row;
+    }   
+}
+
+@media screen and (min-width:768px){
+    div.tasks {
+        flex-direction: row;
+    }   
+}
+
+@media screen and (min-width:1024px){
+    div.tasks {
+        flex-direction: row;
+    }   
+}
+
+@media screen and (min-width:1280px){
+    body {
+        max-width:1280px;
+        margin: auto;
+    }   
+}
