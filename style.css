@@ -7,5 +7,14 @@ h1.todolist {
     margin: 20px;
     text-align: center;
     padding: 15px;
-    color:white
+    color:white;
+    font-size: 55px;
+    border: 12px solid rgb(0, 0, 0);
+}
+textarea#text1 {
+    width: 400px;
+    height: 100px;
+    display: block;
+    
+
 }
