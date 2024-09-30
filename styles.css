@@ -1,0 +1,124 @@
+*{
+    font-family: sans-serif;
+}
+
+h1{
+    background-color: #6667AB;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.2rem;
+    margin: 0.5rem;
+}
+
+form{
+    margin: 0.5rem;
+}
+
+label,textarea,input,button {
+    display: block;
+    width: 100%;
+}
+
+textarea, input {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #6667AB;
+    color: #FFFFFF;
+    padding: 0.5rem;
+    font-weight: bold;
+    border:0px;
+    border-radius: 4px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: #3d3d70;
+}
+
+div.listItem{
+    border: 2px solid #6667AB;
+    padding: 0 0.5rem 0 0.5rem;
+    margin: 0.5rem;
+    color: #666666;
+}
+
+div.listItem p{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+div.listItem p a{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #6667AB;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+div.listItem p a:hover{
+    text-decoration: underline;
+}
+
+div.listItem p a.delete{
+    color:red
+}
+
+div.listItem span {
+    padding: 2px 8px 2px 8px;
+    color: #FFFFFF;
+    font-size: 0.8rem;
+    border-radius: 2px;
+}
+
+div.listItem span.inProgress {
+    background-color: #efac00;
+}
+
+div.listItem span.toDO {
+    background-color: #757470;
+}
+
+div.listItem span.done {
+    background-color: #0daf25;
+}
+
+div.tareas{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:476px) {
+    div.tareas{
+        display: flex;
+        flex-direction: row;
+    }
+    body{
+        background-color: rgb(196, 115, 192);
+    }
+}
+
+@media screen and (min-width:768px) {
+    body{
+        background-color: aqua;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    body{
+        background-color:beige
+    }
+}
+
+@media screen and (min-width:1280px) {
+    body{
+        max-width: 1280px;
+        margin: auto;
+    }
+}
