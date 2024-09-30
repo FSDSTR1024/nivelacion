@@ -1,0 +1,11 @@
+body {
+    font-family: sans-serif;
+}
+
+h1.todolist {
+    background-color: rgba(21, 21, 226, 0.965);
+    margin: 20px;
+    text-align: center;
+    padding: 15px;
+    color:white
+}
