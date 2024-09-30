@@ -11,7 +11,7 @@ h1.todolist {
 
 }
 h2 {
-    font-size 1.2rem;
+    font-size: 1.2rem;
     margin:0.5rem;
     
 }
@@ -46,7 +46,7 @@ button:hover {
     zoom: 1.2;
 }
 
-div {
+div.list {
     border: 2px solid #6667AB;
     padding: 0,5rem;
     padding-top: 0rem;
@@ -89,12 +89,42 @@ span.toDo {
     border-radius: 2px;
 }
 span.done {
-    background-color: #7bef00;
+    background-color: #3d7106;
     padding: 2px 9px 2px 8px;
     color: white;
     font-size: 0.8rem;
     border-radius: 2px;
 }
 
+div.tasks {
+    display:flex;
+    flex-direction: column;
+}
 
+@media screen and (min-width:476px) {
+    div.tasks {
+        flex-direction: row;
+    }
+}
+@media screen and (min-width:768px) {
+    div.tasks {
+        flex-direction: row;
+    }
+}
+@media screen and (min-width:768px) {
+    div.tasks {
+        flex-direction: row;
+    }
+}
+@media screen and (min-width:1024px) {
+    div.tasks {
+        flex-direction: row;
+    }
+}
+@media screen and (min-width:1280px) {
+    body {
+        max-width: 1280px;
+        margin: auto;
+    }
+}
 
