@@ -59,13 +59,31 @@ p{
     margin-bottom: 0.5rem;
 }
 
-div p a{
+a{
     font-size: 0.8rem;
     text-transform: uppercase;
     color: #6667ab;
     text-decoration: none;
+    margin-right: 1rem;
 }
 
-div p a:hover{
+a:hover{
     text-decoration: underline;
+}
+
+.delete{
+    color: red;
+}
+
+.in-progres{
+    background-color: #EFAC00;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.in-progres:hover{
+    border: 2px solid #6667ab;
+    background-color: green;
 }
