@@ -1,0 +1,43 @@
+*{
+    font-family: sans-serif;
+}
+
+html{
+    background-color: #23fcfc;
+}
+
+h1{
+    background-color: #6667ab;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+textarea, input, label, button{
+    display: block;
+    width: 100%;
+}
+
+textarea, input{
+    margin-bottom: 1rem;
+}
+
+button{
+    background-color: #6667ab;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #3c3d7e;
+    color: black;
+}
