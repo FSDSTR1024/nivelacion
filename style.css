@@ -48,10 +48,14 @@ button:hover{
 }
 
 div{
-    border: 2px  solid #6667ab;
     padding: 0 0.5rem 0 0.5rem;
     color: #666666;
     margin: 2rem;
+}
+
+.listItem{
+    border: 2px  solid #6667ab;
+    flex: 1;
 }
 
 p{
@@ -86,4 +90,34 @@ a:hover{
 .in-progres:hover{
     border: 2px solid #6667ab;
     background-color: green;
+}
+
+.tasks{
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width:476px) {
+    .tasks{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .tasks{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .tasks{
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .tasks{
+        max-width:1280px;
+        margin: auto;
+    }
 }
