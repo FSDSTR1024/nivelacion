@@ -9,16 +9,16 @@
     <body>
         <h1>TODOLIST</h1>
         <h2>Nueva tarea</h2>
-        <form  action="">
+        <form id="taskform" action="">
 
             <label for="description">Escribe la descripción de la tarea</label>
-            <textarea name="" id="" placeholder="Esto es un textarea" name="description">Hola estoy aquí</textarea>
+            <textarea name="" id="description" placeholder="Esto es un textarea">Hola estoy aquí</textarea>
 
 
             <label>Fecha límite</label>
-            <input type="date" name="" id="" />
+            <input type="date" name="" id="dueDate" />
 
-            <button>INSERTAR</button>
+            <button type="submit">INSERTAR</button>
         </form>
         <h2>Tareas</h2>
 
@@ -57,5 +57,6 @@
             </div>
         </div>
         
+        <script src="index.js"></script>
     </body>
 </html>
