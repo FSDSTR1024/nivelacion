@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+}
+
+label,text,input{
+    display: block;
+    margin-bottom: 10px;
+}
+
+input:required{
+    background-color: green;
+}
+
+label input{
+    display: inline;
+}
