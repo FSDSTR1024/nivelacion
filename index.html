@@ -1,50 +1,65 @@
 <!DOCTYPE html>
-<html lang="es">
+<html dir="ltr" lang="en">
   <head>
-    <link rel="stylesheet" href="style.css">
+    <link href="./index.css" rel="stylesheet">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List App</title>
+    <meta content="initial-scale=1.0, width=device-width" name="viewport">
+    <title>To-Do List Exercise</title>
   </head>
   <body>
-    <h1>TODOLIST</h1>
-    <h2>Nueva tarea</h2>
-    <form action="">
-      <label for="description">Escribe la descripción de la tarea</label>
-      <textarea name="description" placeholder="Texto explicativo">Texto por defecto</textarea>
-      <label>Fecha límite</label>
-      <input type="date"/>
-      <button>INSERTAR</button>
-    </form>
-    <h2>Tareas</h2>
-    <section class="tasks">
-      <section class="task">
-        <p>Preparar la clase de Nuclio Full Stack Development</p>
-        <p><span class="todo">To Do</span> Fecha límite: 25JUN</p>
-        <p>
-          <a href="">Editar</a>
-          <a href="">Marcar como Finalizada</a>
-          <a class="delete" href="">Eliminar</a>
-        </p>
+    <main>
+      <h1 class="centered purpleBC upper">ToDoList</h1>
+      <section class="indented">
+        <h2>New task</h2>
+        <form action='' id="newTaskForm">
+          <label for="newTaskDescription">Task description</label>
+          <textarea id="newTaskDescription" placeholder="Describe what the new task is about..."></textarea>
+          <label for="newTaskDueDate">Due date</label>
+          <input id="newTaskDueDate" type="date"/>
+          <button class="centered purpleBC upper" type="submit">Insert</button>
+        </form>
       </section>
-      <section class="task">
-        <p>Preparar la clase de Nuclio Full Stack Development</p>
-        <p><span class="wip">In Progress</span> Fecha límite: 25JUN</p>
-        <p>
-          <a href="">Editar</a>
-          <a href="">Marcar como Finalizada</a>
-          <a class="delete" href="">Eliminar</a>
-        </p>
+      <section class="indented">
+        <h2>Tasks</h2>
+        <section id="tasksSection">
+          <section class="task">
+            <p>Prepare the Nuclio Full-Stack Developer class.</p>
+            <p class="date"><span class="upper wip">In Progress</span> Due date: 25/06/2024</p>
+            <p>
+              <a class="edit" href=''>Edit</a>
+              <a class="markAsFinished" href=''>Mark as Finished</a>
+              <a class="delete" href=''>Delete</a>
+            </p>
+          </section>
+          <section class="task">
+            <p>Return books to the library and pick new sci-fi ones.</p>
+            <p class="date"><span class="upper wip">In Progress</span> Due date: 17/07/2024</p>
+            <p>
+              <a class="edit" href=''>Edit</a>
+              <a class="markAsFinished" href=''>Mark as Finished</a>
+              <a class="delete" href=''>Delete</a>
+            </p>
+          </section>
+          <section class="task">
+            <p>Prepare bags and book the insurance for the Marth travel.</p>
+            <p class="date"><span class="todo upper">To Do</span> Due date: 03/08/2024</p>
+            <p>
+              <a class="edit" href=''>Edit</a>
+              <a class="markAsFinished" href=''>Mark as Finished</a>
+              <a class="delete" href=''>Delete</a>
+            </p>
+          </section>
+          <section class="task">
+            <p>Develop a robot to program for me.</p>
+            <p class="date"><span class="done upper">Done</span> Due date: 31/02/2024</p>
+            <p>
+              <a class="edit" href=''>Edit</a>
+              <a class="markAsFinished" href=''>Mark as Finished</a>
+              <a class="delete" href=''>Delete</a>
+            </p>
+          </section>
+        </section>
       </section>
-      <section class="task">
-        <p>Preparar la clase de Nuclio Full Stack Development</p>
-        <p><span class="done">Done</span> Fecha límite: 25JUN</p>
-        <p>
-          <a href="">Editar</a>
-          <a href="">Marcar como Finalizada</a>
-          <a class="delete" href="">Eliminar</a>
-        </p>
-      </section>
-    </section>
+    </main>
   </body>
 </html>
