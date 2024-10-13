@@ -69,3 +69,33 @@ document.getElementById("newTaskForm").addEventListener("submit", function(event
     addNewTaskToTasksList(newTaskDescription, newTaskDueDate);
   }
 });
+
+function _editTask(target) {
+  /* 1. Edit description */
+  const oldDescription = target.parentElement.parentElement.firstElementChild.textContent;
+  const newDescription = prompt("Edit task description: ", oldDescription);
+  // target.parentElement.parentElement.querySelector('p').innerHTML = newDescription;
+  target.parentElement.parentElement.firstElementChild.innerHTML = newDescription;
+}
+
+function _deleteTask(target) {
+  document.getElementById("tasksSection").removeChild(target.parentElement.parentElement);
+}
+
+/* Listener function when 'Delete' task button is clicked, to perform some action */
+document.getElementById("tasksSection").addEventListener("click", function(event) {
+  if (event.target.classList.contains("edit")) {
+    /* Prevent page to be re-loaded */
+    event.preventDefault();
+    _editTask(event.target);
+  } else if (event.target.classList.contains("markAsFinished")) {
+    /* Prevent page to be re-loaded */
+    event.preventDefault();
+    _markAsFinished(event.target);
+  } else if (event.target.classList.contains("delete")) {
+    /* Prevent page to be re-loaded */
+    event.preventDefault();
+    alert(`Deleting '${event.target.parentElement.parentElement.firstElementChild.textContent}' task...`);
+    _deleteTask(event.target);
+  }
+});
