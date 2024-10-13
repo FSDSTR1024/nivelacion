@@ -1,3 +1,11 @@
+function _getDateFormatted(dateString) {
+  const [aaaa, mm, dd] = dateString.split('-');
+  if (aaaa && mm && dd) {
+    return `${dd}/${mm}/${aaaa}`;
+  }
+  return dateString;
+}
+
 function addNewTaskToTasksList(newTaskDescription, newTaskDueDate) {
   /* 1. Create the new Task object */
   const taskContainer = document.createElement("section");
@@ -15,8 +23,10 @@ function addNewTaskToTasksList(newTaskDescription, newTaskDueDate) {
   taskDueDateStatus.classList.add("todo");
   taskDueDateStatus.innerHTML = "To Do"
   taskDueDateContainer.appendChild(taskDueDateStatus);
-  /* 3.2. Due date text */
-  taskDueDateContainer.innerHTML += ` Due date: ${newTaskDueDate}`;
+  /* 3.2. Get the date in the desired format */
+  const newTaskDueDateFormatted = _getDateFormatted(newTaskDueDate);
+  /* 3.3. Due date text */
+  taskDueDateContainer.innerHTML += ` Due date: ${newTaskDueDateFormatted}`;
   taskContainer.appendChild(taskDueDateContainer);
   /* 4. Add the new task buttons */
   const taskButtonsContainer = document.createElement('p');
